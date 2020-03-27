@@ -12,313 +12,319 @@
 
 <body>
     <div class="container">
-            <div class="navbar">
-                <ul class="menu">
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Movies
-                    </li>
-                    <li>
-                        Reviews
-                    </li>
-                    <li>
-                        Book Ticket
-                    </li>
-                </ul>
-            </vid>
-
-        <div class="slider">
-
-            <div class="slider-content slider-section">
-                <img class="mySlides slider-animate-left" alt="movie image" src="images/slider-01.jpg">
-                <img class="mySlides slider-animate-right" alt="movie image" src="images/slider-02.jpg">
-                <img class="mySlides slider-animate-top" alt="movie image" src="images/slider-03.jpg">
-                <img class="mySlides slider-animate-bottom" alt="movie image" src="images/slider-04.jpg">
-                <img class="mySlides slider-animate-zoom" alt="movie image" src="images/slider-05.jpg">
-            </div>
-            <div>
-                <div class="mini-img">
-                    <img alt="movie image" src="images/image-1.jpg">
-                    <img alt="movie image" src="images/image-2.jpg">
-                    <img alt="movie image" src="images/image-3.jpg">
-                    <img alt="movie image" src="images/image-4.jpg">
-                    <img alt="movie image" src="images/image-5.jpg">
-                    <img alt="movie image" src="images/image-1.jpg">
-                </div>
-            </div>
-            <script>
-                var myIndex = 0;
-                carousel();
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) { myIndex = 1 }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 2500);
-                }
-            </script>
+        <div class="navbar">
+            <ul class="menu">
+                <li>
+                    Home
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Movies
+                </li>
+                <li>
+                    Reviews
+                </li>
+                <li>
+                    Book Ticket
+                </li>
+            </ul>
         </div>
 
+            <div class="slider">
 
-
-        <div class="movie-reviews">
-
-            <div class="movie-desc">
-                <h1> Rancid Tomatoes TMNT (2007)</h1>
-
-                <div class="movie-rate">
-                    <div class="rate">
-                        <i class="fa fa-star"></i>
-                        <p><span>7.5</span> /10<br>
-                            <span class="rv">56 Reviews</span>
-                        </p>
-                    </div>
-                    <div class="rate-star">
-                        <p>Rate This Movie: </p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-o"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
+                <div class="slider-content slider-section">
+                    <img class="mySlides slider-animate-left" alt="movie image" src="images/slider-01.jpg">
+                    <img class="mySlides slider-animate-right" alt="movie image" src="images/slider-02.jpg">
+                    <img class="mySlides slider-animate-top" alt="movie image" src="images/slider-03.jpg">
+                    <img class="mySlides slider-animate-bottom" alt="movie image" src="images/slider-04.jpg">
+                    <img class="mySlides slider-animate-zoom" alt="movie image" src="images/slider-05.jpg">
+                </div>
+                <div>
+                    <div class="mini-img">
+                        <img alt="movie image" src="images/image-1.jpg">
+                        <img alt="movie image" src="images/image-2.jpg">
+                        <img alt="movie image" src="images/image-3.jpg">
+                        <img alt="movie image" src="images/image-4.jpg">
+                        <img alt="movie image" src="images/image-5.jpg">
+                        <img alt="movie image" src="images/image-1.jpg">
                     </div>
                 </div>
+                <script>
+                    var myIndex = 0;
+                    carousel();
 
-                <h2> Rotten 33%</h2>
-                <div class="grid-box">
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic Peter Debruge</b> --Variety
-                        </div>
-                        <div>
-                            <p>
-                                <img class="comment-img" alt="movie image" src="images/rotten.gif" />
-                                Ditching the cheeky, self-aware wink that helped to excuse the concept's inherent
-                                corniness,
-                                the movie attempts to look polished and 'cool,' but the been-there animation can't
-                                compete
-                                with
-                                the
-                                then-cutting-edge puppetry of the 1990 live-action movie.
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2500);
+                    }
+                </script>
+            </div>
+
+
+
+            <div class="movie-reviews">
+
+                <div class="movie-desc">
+                    <h1> Rancid Tomatoes TMNT (2007)</h1>
+
+                    <div class="movie-rate">
+                        <div class="rate">
+                            <i class="fa fa-star"></i>
+                            <p><span>7.5</span> /10<br>
+                                <span class="rv">56 Reviews</span>
                             </p>
                         </div>
-                    </div>
-
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic Todd Gilchrist</b> --IGN Movies
-                        </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/fresh.gif" />
-                                TMNT is a fun, action-filled adventure that will satisfy longtime fans and generate a
-                                legion
-                                of
-                                new ones.</p>
-                        </div>
-                    </div>
-
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic Jay Sherman </b> --(unemployed)
-                        </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/rotten.gif">
-                                TIt stinks!</p>
+                        <div class="rate-star">
+                            <p>Rate This Movie: </p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
                         </div>
                     </div>
 
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic Joshua Tyler</b> --CinemaBlend.com
+                    <h2> Rotten 33%</h2>
+                    <div class="grid-box">
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Peter Debruge</b> --Variety
+                            </div>
+                            <div>
+                                <p>
+                                    <img class="comment-img" alt="movie image" src="images/rotten.gif" />
+                                    Ditching the cheeky, self-aware wink that helped to excuse the concept's inherent
+                                    corniness,
+                                    the movie attempts to look polished and 'cool,' but the been-there animation can't
+                                    compete
+                                    with
+                                    the
+                                    then-cutting-edge puppetry of the 1990 live-action movie.
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
-                                The rubber suits are gone and they've been redone with fancy computer technology, but
-                                that
-                                hasn't stopped them from becoming dull.</p>
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Todd Gilchrist</b> --IGN Movies
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/fresh.gif" />
+                                    TMNT is a fun, action-filled adventure that will satisfy longtime fans and generate
+                                    a
+                                    legion
+                                    of
+                                    new ones.</p>
+                            </div>
                         </div>
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Jay Sherman </b> --(unemployed)
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/rotten.gif">
+                                    TIt stinks!</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Joshua Tyler</b> --CinemaBlend.com
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
+                                    The rubber suits are gone and they've been redone with fancy computer technology,
+                                    but
+                                    that
+                                    hasn't stopped them from becoming dull.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic NAME</b> --PUBLICATION
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
+                                    YOUR REVIEW HERE</p>
+                            </div>
+                        </div>
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Jeannette Catsoulis</b> --New York Times
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
+                                    The turtles themselves may look prettier, but are no smarter; torn irreparably from
+                                    their
+                                    countercultural roots, our superheroes on the half shell have been firmly co-opted
+                                    by
+                                    the
+                                    industry their
+                                    creators once sought to spoof.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Mark Palermo</b> --Coast (Halifax, Nova Scotia)
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/fresh.gif" />
+                                    The striking use of image and motion allows each sequence to leave an impression.
+                                    It's
+                                    an
+                                    accomplished restart to this franchise.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>Critic Steve Rhodes</b> --Internet Reviews
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
+                                    The script feels like it was computer generated. This mechanical presentation lacks
+                                    the
+                                    cheesy
+                                    charm of the three live action films.</p>
+                            </div>
+                        </div>
+
+                        <div class="comment-body">
+                            <div class="comment-meta">
+                                <img alt="Emilie S" src="images/user.png" class="avatar">
+                                <b>CCritic NAME</b> --PUBLICATION
+                            </div>
+                            <div>
+                                <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
+                                    YOUR REVIEW HERE</p>
+                            </div>
+                        </div>
+
+
                     </div>
 
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic NAME</b> --PUBLICATION
-                        </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
-                                YOUR REVIEW HERE</p>
-                        </div>
-                    </div>
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S"  src="images/user.png" class="avatar">
-                            <b>Critic Jeannette Catsoulis</b> --New York Times
-                        </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
-                                The turtles themselves may look prettier, but are no smarter; torn irreparably from
-                                their
-                                countercultural roots, our superheroes on the half shell have been firmly co-opted by
-                                the
-                                industry their
-                                creators once sought to spoof.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic Mark Palermo</b> --Coast (Halifax, Nova Scotia)
-                        </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/fresh.gif" />
-                                The striking use of image and motion allows each sequence to leave an impression. It's
-                                an
-                                accomplished restart to this franchise.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>Critic Steve Rhodes</b> --Internet Reviews
-                        </div>
-                        <div>
-                            <p><img class="comment-img"  alt="movie image" src="images/rotten.gif" />
-                                The script feels like it was computer generated. This mechanical presentation lacks the
-                                cheesy
-                                charm of the three live action films.</p>
-                        </div>
-                    </div>
-
-                    <div class="comment-body">
-                        <div class="comment-meta">
-                            <img alt="Emilie S" src="images/user.png" class="avatar">
-                            <b>CCritic NAME</b> --PUBLICATION
-                        </div>
-                        <div>
-                            <p><img class="comment-img" alt="movie image" src="images/rotten.gif" />
-                                YOUR REVIEW HERE</p>
-                        </div>
-                    </div>
-
+                    (1-10) of 88
 
                 </div>
+                <div class="movie-img">
+                    <img src="images/tmnm.jpg" alt="movie image">
+                    <div class="movie-detail">
+                        <h2>General Overview</h2>
+                        <h3>STARRING</h3>
+                        <ul>
+                            <li>Patrick Stewart</li>
+                            <li>Mako</li>
+                            <li>Sarah Michelle Gellar</li>
+                            <li>Kevin Smith</li>
+                        </ul>
 
-                (1-10) of 88
+                        <h3>DIRECTOR</h3>
+                        <ul>
+                            <li>Kevin Munroe</li>
+                        </ul>
 
-            </div>
-            <div class="movie-img">
-                <img src="images/tmnm.jpg" alt="movie image">
-                <div class="movie-detail">
-                    <h2>General Overview</h2>
-                    <h3>STARRING</h3>
-                    <ul>
-                        <li>Patrick Stewart</li>
-                        <li>Mako</li>
-                        <li>Sarah Michelle Gellar</li>
-                        <li>Kevin Smith</li>
-                    </ul>
+                        <h3>THEATRICAL RELEASE</h3>
+                        <ul>
+                            <li>Mar 23, 2007</li>
+                        </ul>
 
-                    <h3>DIRECTOR</h3>
-                    <ul>
-                        <li>Kevin Munroe</li>
-                    </ul>
+                        <h3>RATING</h3>
+                        <ul>
+                            <li>PG</li>
+                        </ul>
 
-                    <h3>THEATRICAL RELEASE</h3>
-                    <ul>
-                        <li>Mar 23, 2007</li>
-                    </ul>
-
-                    <h3>RATING</h3>
-                    <ul>
-                        <li>PG</li>
-                    </ul>
-
-                    <h3>MOVIE SYNOPSIS</h3>
-                    <ul>
-                        <li>After the defeat of their old arch nemesis, The Shredder, the Turtles have grown apart as a
-                            family.</li>
-                    </ul>
+                        <h3>MOVIE SYNOPSIS</h3>
+                        <ul>
+                            <li>After the defeat of their old arch nemesis, The Shredder, the Turtles have grown apart
+                                as a
+                                family.</li>
+                        </ul>
 
 
-                    <h3>MPAA RATING</h3>
-                    <ul>
-                        <li>PG, for animated action violence, some scary cartoon images and mild language</li>
-                    </ul>
+                        <h3>MPAA RATING</h3>
+                        <ul>
+                            <li>PG, for animated action violence, some scary cartoon images and mild language</li>
+                        </ul>
 
-                    <h3>RELEASE COMPANY</h3>
-                    <ul>
-                        <li>Warner Bros.</li>
-                    </ul>
+                        <h3>RELEASE COMPANY</h3>
+                        <ul>
+                            <li>Warner Bros.</li>
+                        </ul>
 
-                    <h3>RUNTIME</h3>
-                    <ul>
-                        <li>90 mins</li>
-                    </ul>
+                        <h3>RUNTIME</h3>
+                        <ul>
+                            <li>90 mins</li>
+                        </ul>
 
-                    <h3>GENRE</h3>
-                    <ul>
-                        <li>Action/Adventure, Comedies, Childrens, Martial Arts, Superheroes, Ninjas, Animated
-                            Characters
-                        </li>
-                    </ul>
+                        <h3>GENRE</h3>
+                        <ul>
+                            <li>Action/Adventure, Comedies, Childrens, Martial Arts, Superheroes, Ninjas, Animated
+                                Characters
+                            </li>
+                        </ul>
 
-                    <h3>BOX OFFICE</h3>
-                    <ul>
-                        <li>$54,132,596</li>
-                    </ul>
+                        <h3>BOX OFFICE</h3>
+                        <ul>
+                            <li>$54,132,596</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+
+
+
+            <footer class="footer">
+                <h3>LINKS</h3>
+                <div>
+                    <a href="/" title="home">Home</a>
+                </div>
+                <div>
+                    <a href="/">The Official TMNT Site</a>
+                </div>
+                <div><a href=".">RT Review</a></div>
+                <div><a href="../">RT Home</a></div>
+                <div><a href="/">CS472</a></div>
+                <p>Copyright &copy; 2012 Movie Review | All rights reserved</p>
+                <p>
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border: 0; width: 88px; height: 31px"
+                            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+                    </a>
+                    <a href="https://validator.w3.org/check/referer">
+                        <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
+                    </a>
+                </p>
+            </footer>
+
         </div>
-
-
-
-
-        <footer class="footer">
-            <h3>LINKS</h3>
-            <div>
-                <a href="/" title="home">Home</a>
-            </div>
-            <div>
-                <a href="/">The Official TMNT Site</a>
-            </div>
-            <div><a href=".">RT Review</a></div>
-            <div><a href="../">RT Home</a></div>
-            <div><a href="/">CS472</a></div>
-            <p>Copyright &copy; 2012 Movie Review | All rights reserved</p>
-            <p>
-                <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border: 0; width: 88px; height: 31px"
-                        src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-                </a>
-                <a href="https://validator.w3.org/check/referer">
-                    <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator" />
-                </a>
-            </p>
-        </footer>
-
-    </div>
 </body>
 
 </html>
