@@ -1,0 +1,91 @@
+body {
+	font-family: 'Alegreya', serif;
+	margin: 0;
+	padding: 0;
+	line-height: 24px;
+	background: #f8f6f5;
+	font-size: 18px;
+    background-image: url("../images/side-wall.jpg");
+	background-color: #cccccc;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+header{
+    margin-bottom: 30px;
+}
+
+.menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background: rgba(200, 54, 54, 0.5);
+	color: #ffffff;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	min-width: 144px;
+	font-weight: 400;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid rgb(200, 54, 54);
+	border-bottom: 1px solid rgb(200, 54, 54);
+	padding: 16px 0;
+	-webkit-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+
+.menu li:last-child {
+	border-right: none;
+}
+
+.menu li span {
+	color: #aa9f9a;
+}
+
+.menu li:hover {
+	background: rgb(200, 54, 54);
+}
+
+.slider{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background: rgba(200, 54, 54, 0.5);
+    color: #ffffff;
+    padding: 20px;
+}
+
+.mini-img img {
+    width: 202px;
+    margin-left: 22px;
+    margin-top: 17px;
+}
+
+.slider-section{margin-top:16px!important;margin-bottom:16px!important}
+.slider-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.slider-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.slider-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.slider-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.slider-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.slider-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.slider-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.slider-animate-input{transition:width 0.4s ease-in-out}.slider-animate-input:focus{width:100%!important}
+
+.review{
+    text-align: center;
+}
+.review img{
+    width: 276px;
+}
