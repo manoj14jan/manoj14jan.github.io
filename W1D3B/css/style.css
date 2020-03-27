@@ -197,7 +197,7 @@ header{
 .grid-box{
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-row: auto auto;
+    grid-row: auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
