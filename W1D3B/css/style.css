@@ -85,14 +85,17 @@ a:focus {
     color: #ffffff;
     padding: 20px;
 }
-
+.mySlides{
+    height: 615px;
+    margin: 16px;
+    border: 10px solid beige;
+}
 .mini-img img {
     margin-left: 8px;
     margin-top: 17px;
     border: 10px solid beige;
 }
 
-.slider-section{margin-top:16px!important;margin-bottom:16px!important}
 .slider-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
 .slider-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 .slider-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
