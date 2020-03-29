@@ -24,7 +24,7 @@
                         <label for="website-url">Website url</label>
                         <input type="url" class="form-control" id="website-url" aria-describedby="urlHelp"
                             name="websiteUrl" placeholder="Enter valid website url" required>
-                        <small id="emailHelp" class="form-text text-muted">Must enter valid website url</small>
+                        <small id="urlHelp" class="form-text text-muted">Must enter valid website url</small>
                     </div>
 
                     <div class="form-group">
@@ -38,8 +38,8 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" required name="password"
                             placeholder="Enter password" pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" title="Must
                         contain At least 10 characters, contains at least one
-                        number, one uppercase and lowercase letter">
-                        <small id="emailHelp" class="form-text text-muted">Must
+                        number, one uppercase and lowercase letter" aria-describedby="passwordHelp">
+                        <small id="passwordHelp" class="form-text text-muted">Must
                             contain At least 10 characters, contains at least one
                             number, one uppercase and lowercase letter</small>
                     </div>
