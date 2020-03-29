@@ -47,7 +47,7 @@ ul {
     background-color: yellow;
   }
 
-  #a, #b {
+  .a, .b {
 	width: 100px;
 	height: 100px;
 	font: 30pt bold Helvetica, Arial, sans-serif;
@@ -55,15 +55,15 @@ ul {
 	text-align: center;
 }
 
-#a {
+.a {
 	background-color: lightblue;
 }
 
-#b {
+.b {
 	background-color: pink;
 }
 
-#c {
+.c {
 	background-color: lightgray;
 }
 
@@ -82,86 +82,86 @@ ul {
 
 }
 
-.ex1 #a {
+.ex1 .a {
         float: left;
 }
-.ex1 #b {
+.ex1 .b {
         float: right;
 }
 
-.ex2 #a {
+.ex2 .a {
     float: left;
 }
-.ex2 #b {
+.ex2 .b {
     float: right;
     clear: left;
 }
 
-.ex3 #a {
+.ex3 .a {
     float: left;
 }
-.ex3 #b {
+.ex3 .b {
     float: right;
     clear: left;
 }
-.ex3 #c {
+.ex3 .c{
     clear: left;
     text-align: right;
 }
 
-.ex4 #a {
+.ex4 .a {
     float: left;
   }
-.ex4 #b {
+.ex4 .b {
     float: right;
     clear: left;
   }
-.ex4 #c {
+.ex4 .c{
     text-align: right;
     width: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.ex5 #a {
+.ex5 .a {
     float: right;
   }
-.ex5 #b {
+.ex5 .b {
     float: left;
   }
-.ex5 #c {
+.ex5 .c{
     float: left;
     text-align: center;
     width: 100px;
 }
 
-.ex6 #a {
+.ex6 .a {
     float: right;
   }
-.ex6 #b {
+.ex6 .b {
     position: relative;
     top: 50px;
     left: 220px;
   }
-.ex6 #c {
+.ex6 .c{
     clear: right;
     text-align: center;
     margin-right: 100px;
   }
 
-.ex7 #a, .ex7 #b {
+.ex7 .a, .ex7 .b {
     float: left;
   }
-.ex7 #c {
+.ex7 .c{
     margin-left: 200px;
 }
    
-.ex8 #a {
+.ex8 .a {
     float: left;
 }
 
-.ex9 #a, .ex9 #b { float: left; }
-.ex9 #c { margin-top: 100px; }
-.ex9 #d {
+.ex9 .a, .ex9 .b { float: left; }
+.ex9 .c{ margin-top: 100px; }
+.ex9 .d {
   height: 100px;
 }
