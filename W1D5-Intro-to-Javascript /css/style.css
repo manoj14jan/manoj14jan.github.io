@@ -1,0 +1,11 @@
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    font-size: 1.2em;
+}
+
+.list-group{
+    list-style: none;
+}
+  
