@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+
+    <title>The South West - Census Form</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">The South West - Regional Census</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="census-form.html"> Census From <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Welcome to the Regional Census Website</h5>
+            <hr>
+            <form id="census-form">
+
+                <div class="row">
+                    <div class="col-sm">
+                        <label for="fullname">*Full Name</label>
+                        <input type="text" class="form-control" id="fullname" aria-describedby="fullnameHelp"
+                            name="fullName" placeholder="Enter your Full Name" required
+                            title="Enter your Full Name as printed on your Goverment issued ID">
+                        <small id="fullnameHelp" class="form-text text-muted">Enter your Full Name as printed on your
+                            Goverment issued ID </small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="citizen-id">*Citizen ID:</label>
+                            <input type="text" class="form-control" id="citizen-id" name="citizenId"
+                                placeholder="XXXXXXXXXX" required pattern="[0-9]{10}">
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="ssn">*Social Security Number</label>
+                            <input type="text" class="form-control" id="ssn" name="ssn" placeholder="XXX-XX-XXXX"
+                                required pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="state">*State</label>
+                            <select class="form-control" id="state" name="state" required>
+                                <option value="">Select</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="New Mexico">New Mexico</option>
+                                <option value="Texas">Texas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="account-type">*Senior Citizen</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seniorCitizen" required
+                                    id="senior-citizen-yes" value="Yes">
+                                <label class="margin-r form-check-label " for="senior-citizen">
+                                    Yes
+                                </label>
+
+                                <input class="form-check-input" type="radio" name="seniorCitizen" id="senior-citizen-no"
+                                    value="No">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <table class="table" id="list-table" >
+        <thead>
+            <tr>
+                <th scope="col">Citizen ID</th>
+                <th scope="col">Social Security</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">State</th>
+                <th scope="col">Senior</th>
+            </tr>
+        </thead>
+        <tbody id="list-body">
+          
+        </tbody>
+    </table>
+
+    <div class="footer-div">
+        <div class="left-div">
+            O. Kalu ::: CS472-WAP
+        </div>
+        <div class="right-div">
+            &copy; April 2020
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
