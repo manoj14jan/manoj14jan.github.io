@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/contact-us-form")
 public class ContactUsForm extends HttpServlet {
+	private int pageHitCount;
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -132,7 +133,15 @@ public class ContactUsForm extends HttpServlet {
 						"			</div>\n" + 
 						"		</form>\n" + 
 						"\n" + 
-						"	</div>\n" + 
+						"	</div>\n "
+						+ "<div class=\"w-75 mt-5 ml-auto mr-auto text-secondary\">\n" + 
+						"		<div class=\"float-left\">Hit Count for this page: "+ ++pageHitCount +"</div>\n" + 
+						"		<div class=\"float-right\">Total Hit Count for the entire WebApp: "+request.getAttribute("webHitCount")+"</div>\n" + 
+						"	</div>" + 
+						
+						
+						
+						
 						"	<!-- Optional JavaScript -->\n" + 
 						"	<!-- jQuery first, then Popper.js, then Bootstrap JS -->\n" + 
 						"	<script src=\"https://code.jquery.com/jquery-3.4.1.slim.min.js\"\n" + 

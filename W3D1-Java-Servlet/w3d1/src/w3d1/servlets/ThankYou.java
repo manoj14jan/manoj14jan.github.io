@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/thank-you")
 public class ThankYou extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	private int pageHitCount;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -71,7 +71,11 @@ public class ThankYou extends HttpServlet {
 				"			Please feel free to <a href=\"contact-us-form\" >Contact Us</a> again\n" + 
 				"		</div>\n" + 
 				"	</div>\n" + 
-				"\n" + 
+				"\n" 
+				+ "<div class=\"w-75 mt-5 ml-auto mr-auto text-secondary\">\n" + 
+				"		<div class=\"float-left\">Hit Count for this page: "+ ++pageHitCount +"</div>\n" + 
+				"		<div class=\"float-right\">Total Hit Count for the entire WebApp: "+request.getAttribute("webHitCount")+"</div>\n" + 
+				"	</div>" + 
 				"	<!-- Optional JavaScript -->\n" + 
 				"	<!-- jQuery first, then Popper.js, then Bootstrap JS -->\n" + 
 				"	<script src=\"https://code.jquery.com/jquery-3.4.1.slim.min.js\"\n" + 
