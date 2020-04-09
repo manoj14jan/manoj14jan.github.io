@@ -13,21 +13,13 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/form-validation")
 public class FormValidation extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public FormValidation() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+	public FormValidation() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -35,7 +27,41 @@ public class FormValidation extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+
+		String[] errors = new String[4];
+
+		String name = request.getParameter("name");
+		String gender = request.getParameter("gender");
+		String category = request.getParameter("category");
+		String message = request.getParameter("message");
+		
+		if(name == null || name.isBlank()) {
+			errors[0]= "Name is missing";
+		}
+		
+		if(gender == null || gender.isBlank()) {
+			errors[1]= "Gender is missing";
+		}
+		
+		if(category == null || category.isBlank()) {
+			errors[2]= "Category is missing";
+		}
+		
+		if(message == null || message.isBlank()) {
+			errors[3]= "Message is missing";
+		}
+
+		request.setAttribute("errors", errors);
+
+		for(String error:errors) {
+			if(error!=null) {
+				request.getRequestDispatcher("/contact-us-form").forward(request, response);
+				return;
+			}
+		}
+
+		response.sendRedirect("http://localhost:8080/w3d1/thank-you?name="+name+"&gender="+gender+"&category="+category+"&message="+message);
+
 	}
 
 }
